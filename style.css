@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(170, 243, 170);
+}
+
+.balloon {
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: rgba(192, 15, 0.4);
+    animation: move-up 5s;
+    animation-iteration-count: infinite;
+}
+
+.balloon::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color: black;
+    top: 110px;
+    left: 50px;
+}
+
+.balloon::after {
+    position: absolute;
+    content: '';
+    border-bottom: 12px solid red;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 109px;
+    left: 41px;
+}
+
+.balloon:nth-child(2) {
+    left: 80px;
+    background-color: rgba(0, 0, 255, 0.5);
+    animation-duration: 3s;
+}
+
+.balloon:nth-child(2)::after {
+    border-bottom: 12px solid blue;
+}
+
+.balloon:nth-child(3) {
+    left: 150px;
+    background-color: rgba(255, 255, 0.5);
+    animation-duration: 2s;
+}
+
+.balloon:nth-child(3)::after {
+    border-bottom: 12px solid yellow;
+}
+
+.balloon:nth-child(4) {
+    left: 200px;
+    background-color: rgba(0, 128, 0.5);
+    animation-duration: 4s;
+}
+
+.balloon:nth-child(4)::after {
+    border-bottom: 12px solid green;
+}
+
+.balloon:nth-child(5) {
+    left: 250px;
+    background-color: rgba(192, 1, 5, 0.5);
+    animation-duration: 4s;
+}
+
+.balloon:nth-child(6) {
+    left: 310px;
+    background-color: rgba(255, 165, 0, 0.5);
+    animation-duration: 6s;
+}
+
+.balloon:nth-child(6)::after {
+    border-bottom: 12px solid orange;
+}
+
+.balloon:nth-child(7) {
+    left: 400px;
+    background-color: teal;
+    animation-duration: 5s;
+}
+
+.balloon:nth-child(7)::after {
+    border-bottom: 12px solid rgb(2, 82, 82);
+}
+
+.balloon:nth-child(8) {
+    left: 450px;
+    background-color: darkmagenta;
+    animation-duration: 4s;
+}
+
+.balloon:nth-child(8)::after {
+    border-bottom: 12px solid magenta;
+}
+
+.balloon:nth-child(9) {
+    left: 520px;
+    background-color: cornflowerblue;
+    animation-duration: 2s;
+}
+
+.balloon:nth-child(9)::after {
+    border-bottom: 12px solid rgb(59, 59, 227);
+}
+
+.balloon:nth-child(10) {
+    left: 560px;
+    background-color: palevioletred;
+    animation-duration: 4s;
+}
+
+.balloon:nth-child(10)::after {
+    border-bottom: 12px solid deeppink;
+}
+
+.balloon:nth-child(11) {
+    left: 620px;
+    background-color: gold;
+    animation-duration: 3s;
+}
+
+.balloon:nth-child(11)::after {
+    border-bottom: 12px solid yellow;
+}
+
+.balloon:nth-child(12) {
+    left: 670px;
+    background-color: lightblue;
+    animation-duration: 3.5s;
+}
+
+.balloon:nth-child(12)::after {
+    border-bottom: 12px solid lightblue;
+}
+
+.balloon:nth-child(13) {
+    left: 720px;
+    background-color: lightgreen;
+    animation-duration: 4.5s;
+}
+
+.balloon:nth-child(13)::after {
+    border-bottom: 12px solid lightgreen;
+}
+
+.balloon:nth-child(14) {
+    left: 780px;
+    background-color: lightcoral;
+    animation-duration: 5.5s;
+}
+
+.balloon:nth-child(14)::after {
+    border-bottom: 12px solid lightcoral;
+}
+
+.balloon:nth-child(15) {
+    left: 830px;
+    background-color: violet;
+    animation-duration: 2.5s;
+}
+
+.balloon:nth-child(15)::after {
+    border-bottom: 12px solid violet;
+}
+
+.balloon:nth-child(16) {
+    left: 890px;
+    background-color: salmon;
+    animation-duration: 3.2s;
+}
+
+.balloon:nth-child(16)::after {
+    border-bottom: 12px solid salmon;
+}
+
+.balloon:nth-child(17) {
+    left: 950px;
+    background-color: pink;
+    animation-duration: 4.2s;
+}
+
+.balloon:nth-child(17)::after {
+    border-bottom: 12px solid pink;
+}
+
+.balloon:nth-child(18) {
+    left: 1000px;
+    background-color: aqua;
+    animation-duration: 5.2s;
+}
+
+.balloon:nth-child(18)::after {
+    border-bottom: 12px solid aqua;
+}
+
+.balloon:nth-child(19) {
+    left: 1060px;
+    background-color: darkblue;
+    animation-duration: 6.2s;
+}
+
+.balloon:nth-child(19)::after {
+    border-bottom: 12px solid darkblue;
+}
+
+.balloon:nth-child(20) {
+    left: 1100px;
+    background-color: beige;
+    animation-duration: 4.8s;
+}
+
+.balloon:nth-child(20)::after {
+    border-bottom: 12px solid beige;
+}
+
+.balloon:nth-child(21) {
+    left: 1180px;
+    background-color: brown;
+    animation-duration: 3.6s;
+}
+
+.balloon:nth-child(21)::after {
+    border-bottom: 12px solid red;
+}
+
+.balloon:nth-child(22) {
+    left: 1250px;
+    background-color: lime;
+    animation-duration: 2.6s;
+}
+
+.balloon:nth-child(22)::after {
+    border-bottom: 12px solid lime;
+}
+
+.balloon:nth-child(23) {
+    left: 1280px;
+    background-color: rgb(247, 247, 101);
+    animation-duration: 5.6s;
+}
+
+.balloon:nth-child(23)::after {
+    border-bottom: 12px solid yellow;
+}
+
+.balloon:nth-child(24) {
+    left: 1350px;
+    background-color: blue;
+    animation-duration: 4.1s;
+}
+
+.balloon:nth-child(24)::after {
+    border-bottom: 12px solid navy;
+}
+
+.balloon:nth-child(25) {
+    left: 1400px;
+    background-color: darkmagenta;
+    animation-duration: 2.6s;
+}
+
+.balloon:nth-child(25)::after {
+    border-bottom: 12px solid magenta;
+}
+
+.balloon:nth-child(26) {
+    left: 1460px;
+    background-color: maroon;
+    animation-duration: 5.6s;
+}
+
+.balloon:nth-child(26)::after {
+    border-bottom: 12px solid maroon;
+}
+
+.birthday-gif {
+    position: absolute;
+    bottom: 20px;
+    /* Adjust as necessary */
+    left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+    /* Center the GIF horizontally */
+    width: 500px;
+    /* Adjust the width as necessary */
+
+}
+
+
+
+@keyframes move-up {
+    0% {
+        top: 69%;
+    }
+
+    100% {
+        top: 0%
+    }
+}
+
+.confetti {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.button {
+    position: absolute;
+    bottom: 90px;
+    left: 70%;
+    height: auto;
+    width: 150px;
+    border: 2px solid black;
+    background-color: deeppink;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+
+
+@media (max-width: 768px) {
+    .birthday-gif {
+        width: 300px;
+        height: auto;
+    }
+
+    .button {
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+    }
+
+    .balloon {
+        width: 50px;
+        height: 60px;
+    }
+}

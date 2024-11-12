@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /*background: linear-gradient(to right, #f7f7f7, #ffe0e0, #f7f7f7);  Soft gradient background */
+    background-repeat: repeat-x;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Box shadow for the container */
+    border-radius: 15px;
+    /* Rounded corners */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    /* Optional for visual separation */
+    background-color: #ffebf2;
+    /* Light pink background for rows */
+    border-radius: 10px;
+}
+
+.text {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    /* Larger font size */
+    line-height: 1.6;
+    /* Improve readability */
+}
+
+.image {
+    width: 150px;
+    /* Image width */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-left: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    /* Rounded corners for images */
+}
+
+.button1 {
+    margin-top: 50px;
+    display: block;
+    text-align: center;
+}
+
+.button1 a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: deeppink;
+    color: white;
+    font-style: oblique;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.button1 a:hover {
+    background-color: #ff6f9c;
+    /* Lighter pink on hover */
+}
+
+/* Add some floating confetti or balloons on the sides */
+.left-decoration,
+.right-decoration {
+    position: fixed;
+    top: 100px;
+    width: 50px;
+    height: 100%;
+    background-image: url('confetti.png');
+    /* Add a confetti image or balloon pattern here */
+    background-repeat: repeat-y;
+}
+
+.left-decoration {
+    left: 0;
+}
+
+.right-decoration {
+    right: 0;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .button1 {
+        margin-top: 30px;
+    }
+    
+    .button1 a {
+        width: 90%;
+    }
+}
